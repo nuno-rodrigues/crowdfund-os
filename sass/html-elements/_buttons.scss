@@ -1,0 +1,19 @@
+/* ================================================================ */
+/*  HTML Elements - Buttons                                         */
+/* ================================================================ */
+
+.btn {
+    border-radius: var(--border-radius-rounded);
+    height: 56px;
+    padding: var(--space-none) var(--space-l);
+}
+
+.desktop {
+    .btn {
+        &:hover {
+            filter: none;
+            background-color: var(--color-primary-hover);
+            border-color: var(--color-primary-hover);
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.character-count {
+    display: flex;
+    flex-direction: column;
+
+    &--info-bottom {
+        flex-direction: column-reverse;
+    }
+
+    &--info-right {
+        align-items: flex-end;
+    }
+
+    &__input {
+        width: 100%;
+    }
+}

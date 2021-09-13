@@ -1,0 +1,11 @@
+/* ================================================================ */
+/*  Patterns - Content - Card                                       */
+/* ================================================================ */
+
+.card {
+    border: var(--border-size-s) solid var(--color-neutral-3);
+}
+
+.card-content {
+    padding: var(--space-xl);
+}

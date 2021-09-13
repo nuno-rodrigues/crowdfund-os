@@ -1,0 +1,9 @@
+.card-top-image {
+    position: relative;
+    svg {
+        position: absolute;
+        left: calc(50% - 25px);
+        top: -25px;
+        border-radius: 100%;
+    }
+}

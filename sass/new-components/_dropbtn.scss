@@ -1,0 +1,13 @@
+.dropbtn {
+    cursor: pointer;
+    
+    &.show {
+        .dropbtn-content {
+            display: block;
+        }
+    }
+
+    .dropbtn-content {
+        display: none;
+    }
+}

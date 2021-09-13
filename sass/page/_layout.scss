@@ -1,0 +1,96 @@
+/* ================================================================ */
+/*  Page Layout - Section                                           */
+/* ================================================================ */
+.section-background {
+    height: 370px;
+    z-index: -1;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.full-width-section .ThemeGrid_Container {
+    max-width: 800px;
+}
+
+
+
+/* ================================================================ */
+/*  Page Layout - Content                                           */
+/* ================================================================ */
+.main-content {
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+
+    .full-width-section {
+        margin-bottom: 100px;
+    }
+}
+
+
+
+/* ================================================================ */
+/*  Page Layout - Header                                            */
+/* ================================================================ */
+.header {
+    background-color: transparent;
+    box-shadow: none;
+
+    &-logo {
+        display: flex;
+        align-items: center;
+
+        .tablet &,
+        .phone & {
+            display: none;
+        }
+    }
+}
+
+.app-logo {
+    border-radius: var(--border-radius-none);
+}
+
+.menu-icon-line {
+    background-color: var(--color-neutral-0);
+}
+
+.app-menu-content {
+
+    .tablet &,
+    .phone & {
+        height: auto;
+        margin: var(--space-m) auto;
+        border-radius: 10px;
+        position: relative;
+        top: 60px;
+        left: 0;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .menu-visible & {
+        opacity: 1;
+        transform: none;
+    }
+
+}
+
+
+/* ================================================================ */
+/*  Page Layout - Menu                                              */
+/* ================================================================ */
+.app-menu-links {
+    justify-content: flex-end;
+
+    a {
+        color: var(--color-neutral-0);
+
+        .tablet &,
+        .phone & {
+            color: var(--color-neutral-10);
+        }
+    }
+}

@@ -1,0 +1,19 @@
+/* ================================================================ */
+/*  Widgets - Radio Button                                          */
+/* ================================================================ */
+
+.radio-button {
+    &:before {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+[data-radio-group] {
+    [data-radio-button] {
+        align-items: flex-start;
+    }
+    label {
+        margin-left: var(--space-l);
+    }
+}

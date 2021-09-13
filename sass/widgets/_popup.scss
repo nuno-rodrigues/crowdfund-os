@@ -1,0 +1,40 @@
+/* ================================================================ */
+/*  Widgets - Popup                                                 */
+/* ================================================================ */
+
+.popup-dialog {
+    max-width: 740px;
+    max-height: 80%;
+
+    &.popup-thanks {
+        .popup-content {
+            height: auto;
+        }
+    }
+
+    .popup-content {
+        height: 700px;
+        padding: var(--space-none) var(--space-base);
+        overflow: auto;
+
+        /* width */
+        &::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: #ccc; 
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #eee; 
+        }
+    }
+}

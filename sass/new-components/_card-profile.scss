@@ -1,0 +1,54 @@
+$className: '.card-profile';
+
+#{$className} {
+    border-radius: var(--border-radius-soft);
+    transition: background .8s;
+    overflow: hidden;
+    background: var(--color-neutral-10);
+    box-shadow: var(--shadow-xl);
+    display: flex;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    &__content {
+        opacity: 0;
+
+        &:before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: var(--color-neutral-10);
+            opacity: .5;
+        }
+
+        > div {
+            position: absolute;
+        }
+    }
+
+    &:hover {
+        background-position: left center;
+
+        &#{$className}--effect-left {
+            background-position: left center;
+        }
+        &#{$className}--effect-top {
+            background-position: top center;
+        }
+        &#{$className}--effect-bottom {
+            background-position: bottom center;
+        }
+        &#{$className}--effect-right {
+            background-position: right center;
+        }
+
+        background-size: 200%;
+
+        #{$className}__content {
+            opacity: 1; 
+        }
+    }
+}

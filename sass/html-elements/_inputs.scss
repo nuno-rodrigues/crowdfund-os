@@ -1,0 +1,10 @@
+/* ================================================================ */
+/*  HTML Elements - Inputs                                         */
+/* ================================================================ */
+
+.form-control[data-input],
+.form-control[data-textarea] {
+    height: 56px;
+    border-radius: var(--border-radius-rounded);
+    text-align: center;
+}

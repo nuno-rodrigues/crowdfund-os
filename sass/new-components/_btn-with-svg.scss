@@ -1,0 +1,49 @@
+.btn-with-svg {
+    position: relative;
+    background-color: var(--color-secondary);
+    border: var(--border-size-none) solid currentColor;
+
+    .svg-wrapper {
+        height: 100%;
+        position: absolute;
+        left: 24px;
+        top: 24px;
+
+        svg {
+            g {
+                circle {
+                    fill: var(--color-primary-hover);
+                }
+                path {
+                    fill: var(--color-neutral-0);
+                }
+            }
+        }
+    }
+
+    &__text {
+        padding-left: var(--space-xl);
+        color: var(--color-primary-hover);
+    }
+
+    &:hover {
+        background-color: #f4f4f4 !important;
+
+        .svg-wrapper {
+            svg {
+                g {
+                    circle {
+                        fill: #707070;
+                    }
+                    path {
+                        fill: #b1b1b1;
+                    }
+                }
+            }
+        }
+
+        .btn-with-svg__text {
+            color: #737373;
+        }
+    }
+}
